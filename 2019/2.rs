@@ -34,9 +34,9 @@ fn solve(codes: &mut Vec<i32>) -> Option<i32> {
     let mut index: usize = 0;
     let mut cmd = codes[index];
     while cmd != 99 {
-        let output_index = codes[index + 3] as usize;
         let input1_index = codes[index + 1] as usize;
         let input2_index = codes[index + 2] as usize;
+        let output_index = codes[index + 3] as usize;
         match cmd {
             1 => codes[output_index] = codes[input1_index] + codes[input2_index],
             2 => codes[output_index] = codes[input1_index] * codes[input2_index],
