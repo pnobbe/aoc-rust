@@ -6,7 +6,7 @@ pub fn part_one(input: &str) -> Option<i32> {
         .map(|s| s.parse::<i32>().expect("parse error"))
         .collect();
 
-    return solve(&mut codes);
+    solve(&mut codes)
 }
 
 pub fn part_two(input: &str) -> Option<i32> {
